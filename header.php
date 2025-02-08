@@ -17,11 +17,11 @@
 
 <header>
     <div class="top-bar">
-        <div class="content-container">
+        <div class="content-container top-bar-content">
             <div class="logo-container">
-                LOGO
+                <img src="<?php echo get_template_directory_uri() . '/assets/pinska_logo.svg'; ?>" alt="">
             </div>
-            <div class="menu-items">
+            <nav class="menu-items">
                 <a href="">Majutus</a>
                 <a href="">Elamused</a>
                 <a href="">Peoruumid</a>
@@ -32,7 +32,7 @@
                     |
                     <a href="">ENGLISH</a>
                 </div>
-            </div>
+            </nav>
         </div>
     </div>
 </header>

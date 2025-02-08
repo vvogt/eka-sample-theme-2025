@@ -1,5 +1,7 @@
 <?php 
 
+include 'includes/template-functions.php';
+
 /**
  * Enqueues scripts and styles.
  */

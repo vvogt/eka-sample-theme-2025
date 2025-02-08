@@ -3,7 +3,7 @@
 /**
  * Template for displaying the header
  *
- * @package eedu
+ * @package ekaexampletheme
  */
 
 ?><!DOCTYPE html>
@@ -19,7 +19,7 @@
     <div class="top-bar">
         <div class="content-container top-bar-content">
             <div class="logo-container">
-                <img src="<?php echo get_template_directory_uri() . '/assets/pinska_logo.svg'; ?>" alt="">
+                <?php echo get_inline_svg('pinska_logo'); ?>
             </div>
             <nav class="menu-items">
                 <a href="">Majutus</a>

@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", serif;
+}
+
 .top-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: #2C3B37;
     color: #ffffff;
     padding: 24px 0;
 
     a {
         color: #ffffff;
+        text-decoration: none;
+
+        .chevron-down {
+            width: 24px;
+            height: 24px;
+        }
     }
 
     .top-bar-content {
@@ -16,6 +31,17 @@
     .menu-items {
         display: flex;
         gap: 24px;
+    }
+
+    .menu-items>a {
+        display: flex;
+        align-items: center;
+    }
+
+    .language-selector {
+        display: flex;
+        gap: 8px;
+        align-items: center;
     }
 }
 

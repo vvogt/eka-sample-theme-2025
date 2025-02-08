@@ -19,17 +19,24 @@
     <div class="top-bar">
         <div class="content-container top-bar-content">
             <div class="logo-container">
-                <?php echo get_inline_svg('pinska_logo'); ?>
+                <a href="<?php echo get_home_url(); ?>">
+                    <?php echo get_inline_svg('pinska_logo'); ?>
+                </a>
             </div>
             <nav class="menu-items">
                 <a href="">Majutus</a>
                 <a href="">Elamused</a>
-                <a href="">Peoruumid</a>
+                <a href="">
+                    Peoruumid
+                    <span class="chevron-down">
+                        <?php echo get_inline_svg('chevron_down'); ?>
+                    </span>
+                </a>
                 <a href="">Toitlustus</a>
                 <a href="">Kontaktid</a>
                 <div class="language-selector">
                     <a href="">EESTI</a>
-                    |
+                    <span>|</span>
                     <a href="">ENGLISH</a>
                 </div>
             </nav>

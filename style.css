@@ -71,3 +71,30 @@ body {
         z-index: -1;
     }
 }
+
+.image-container {
+    margin-right: calc(((100vw - 1440px) / 2) * -1);
+    width: calc(40% + ((100vw - 1440px) / 2))
+}
+
+.large-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding-top: 100px;
+    background: black;
+}
+
+.large-image-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    text-transform: uppercase;
+    padding: 42px 24px;
+    border-radius: 8px;
+    background: green;
+    background-size: cover;
+    background-position: center;
+}

@@ -15,8 +15,13 @@
         ));
     ?>
 
-    <div class="">
-        
+    <div class="content-container">
+        <div class="large-buttons">
+            <a href="" class="large-image-btn" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/monke.jpg'; ?>)">Nupp 1</a>
+            <a href="" class="large-image-btn">Nupp 2</a>
+            <a href="" class="large-image-btn">Nupp 3</a>
+            <a href="" class="large-image-btn">Nupp 4</a>
+        </div>
     </div>
 
 </main>

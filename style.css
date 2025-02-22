@@ -102,3 +102,34 @@ body {
 .admin-bar .top-bar {
     top: 32px;
 }
+
+.text-slider {
+    .swiper-slide {
+        height: 400px;
+        box-sizing: border-box;
+        background: red;
+        border: 4px solid black;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: relative;
+        left: auto;
+        top: auto;
+        right: auto;
+        margin: 0;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+
+    .swiper-nav-buttons {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px;
+        height: 46px;
+    }
+}

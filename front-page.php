@@ -14,6 +14,14 @@
             'image' => $top_section_image,
         ));
     ?>
+
+    <div class="sample-image-container">
+        <div class="content-container image-container-container">
+            <div class="image-container">
+                <?php echo wp_get_attachment_image($top_section_image, 'full', false, array()); ?>
+            </div>
+        </div>
+    </div>
     
     <?php
         get_template_part('template-parts/text-slider', null, array());

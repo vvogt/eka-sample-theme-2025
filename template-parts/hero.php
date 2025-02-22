@@ -1,6 +1,17 @@
 <?php
     $title = $args['title'] ?? '';
     $image = $args['image'];
+
+    /* $title = $args['title'] == 'Main' ? 'Main' : 'Secondary';
+    *
+    *  same as:
+    * 
+    * if($title === 'Main') {
+    *   $title = 'Main';
+    * } else {
+    *   $title = 'Secondary';
+    * }
+    */
 ?>
 
 <section class="front-page-hero">

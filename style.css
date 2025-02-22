@@ -98,3 +98,7 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.admin-bar .top-bar {
+    top: 32px;
+}

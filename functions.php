@@ -42,5 +42,20 @@ function highlight_shortcode( $atts, $content = null ) {
 }
 add_shortcode( 'highlight', 'highlight_shortcode' );
 
+add_theme_support( 'title-tag' );
+
+// Restore classic Menus in Appearance
+function restore_classic_wp_menu() {
+    add_submenu_page(
+        'themes.php',                // Parent slug (Appearance)
+        'Menus',                     // Page title
+        'Menus',                     // Menu title
+        'edit_theme_options',        // Capability required
+        'nav-menus.php',             // Menu slug
+        ''                           // Function (empty as this is a core page)
+    );
+}
+add_action('admin_menu', 'restore_classic_wp_menu', 99);
+
 ?>
 

@@ -34,8 +34,19 @@
                 wp_nav_menu('main-nav');
             ?>
             <button class="mobile-menu-toggle">
-                MUNA
+                <span class="open">
+                    MUNA
+                </span>
+                <span class="close">
+                    X
+                </span>
             </button>
         </div>
+    </div>
+
+    <div class="mobile-menu-container">
+        <?php
+            wp_nav_menu('main-nav');
+        ?>
     </div>
 </header>

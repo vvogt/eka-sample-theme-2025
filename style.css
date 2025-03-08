@@ -71,22 +71,6 @@ body p {
     }
 }
 
-.mobile-menu-toggle {}
-
-.menu-main-nav-container {
-    display: none;
-}
-
-@media screen and (min-width: 640px) {
-    .mobile-menu-toggle {
-        display: none;
-    }
-
-    .menu-main-nav-container {
-        display: block;
-    }
-}
-
 .logo-container:hover {
     color: red;
 }
@@ -200,4 +184,51 @@ body p {
 .highlight {
     background-color: blueviolet;
     color: white;
+}
+
+.mobile-menu-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: lime;
+    padding: 42px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.mobile-menu-container.active {
+    display: block;
+}
+
+.top-bar .menu-main-nav-container {
+    display: none;
+}
+
+.mobile-menu-toggle .open {
+    display: inline;
+}
+
+.mobile-menu-toggle.active .open {
+    display: none;
+}
+
+.mobile-menu-toggle .close {
+    display: none;
+}
+
+.mobile-menu-toggle.active .close {
+    display: inline;
+}
+
+@media screen and (min-width: 640px) {
+    .mobile-menu-toggle {
+        display: none;
+    }
+
+    .top-bar .menu-main-nav-container {
+        display: block;
+    }
 }

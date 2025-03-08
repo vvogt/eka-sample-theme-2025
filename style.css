@@ -50,11 +50,24 @@ body p {
 
     .sub-menu {
         display: none;
+        flex-direction: column;
+        background: white;
+        padding: 12px;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100%);
+
+        a {
+            color: black;
+        }
     }
 
-    .sub-menu.active {
+    .menu-item-has-children {
+        position: relative;
+    }
+
+    .menu-item-has-children.active .sub-menu {
         display: flex;
-        flex-direction: column;
     }
 }
 

@@ -30,23 +30,9 @@
                     <?php echo get_inline_svg('pinska_logo'); ?>
                 </a>
             </div>
-            <nav class="menu-items">
-                <a href="">Majutus</a>
-                <a href="">Elamused</a>
-                <a href="">
-                    Peoruumid
-                    <span class="chevron-down">
-                        <?php echo get_inline_svg('chevron_down'); ?>
-                    </span>
-                </a>
-                <a href="">Toitlustus</a>
-                <a href="">Kontaktid</a>
-                <div class="language-selector">
-                    <a href="">EESTI</a>
-                    <span>|</span>
-                    <a href="">ENGLISH</a>
-                </div>
-            </nav>
+            <?php
+                wp_nav_menu('main-nav');
+            ?>
         </div>
     </div>
 </header>

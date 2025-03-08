@@ -32,12 +32,12 @@ body p {
         align-items: center;
     }
 
-    .menu-items {
+    .menu {
         display: flex;
         gap: 24px;
     }
 
-    .menu-items>a {
+    .menu>a {
         display: flex;
         align-items: center;
     }
@@ -46,6 +46,15 @@ body p {
         display: flex;
         gap: 8px;
         align-items: center;
+    }
+
+    .sub-menu {
+        display: none;
+    }
+
+    .sub-menu.active {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -105,6 +114,7 @@ body p {
 
 .admin-bar .top-bar {
     top: 32px;
+    z-index: 50;
 }
 
 .text-slider {

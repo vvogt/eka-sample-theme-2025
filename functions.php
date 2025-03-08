@@ -11,6 +11,7 @@ add_action(
         wp_enqueue_style('main-style', get_theme_file_uri('style.css'), array(), filemtime(get_theme_file_path('style.css')), 'screen');
         wp_enqueue_style('reset-style', get_theme_file_uri('reset.css'), array(), filemtime(get_theme_file_path('reset.css')), 'screen');
         wp_enqueue_script('slider-script', get_theme_file_uri('slider.js'), array(), filemtime(get_theme_file_path('slider.js')), true);
+        wp_enqueue_script('main', get_theme_file_uri('main.js'), array(), filemtime(get_theme_file_path('main.js')), true);
     }
 );
 
@@ -44,18 +45,7 @@ add_shortcode( 'highlight', 'highlight_shortcode' );
 
 add_theme_support( 'title-tag' );
 
-// Restore classic Menus in Appearance
-function restore_classic_wp_menu() {
-    add_submenu_page(
-        'themes.php',                // Parent slug (Appearance)
-        'Menus',                     // Page title
-        'Menus',                     // Menu title
-        'edit_theme_options',        // Capability required
-        'nav-menus.php',             // Menu slug
-        ''                           // Function (empty as this is a core page)
-    );
-}
-add_action('admin_menu', 'restore_classic_wp_menu', 99);
+
 
 ?>
 

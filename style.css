@@ -71,6 +71,22 @@ body p {
     }
 }
 
+.mobile-menu-toggle {}
+
+.menu-main-nav-container {
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .mobile-menu-toggle {
+        display: none;
+    }
+
+    .menu-main-nav-container {
+        display: block;
+    }
+}
+
 .logo-container:hover {
     color: red;
 }

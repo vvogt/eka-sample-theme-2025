@@ -33,6 +33,9 @@
             <?php
                 wp_nav_menu('main-nav');
             ?>
+            <button class="mobile-menu-toggle">
+                MUNA
+            </button>
         </div>
     </div>
 </header>

@@ -6,7 +6,7 @@
 
  get_header();
 
- $top_section_title = get_field('top_section_title');
+ $top_section_text = get_field('top_section_text');
  $top_section_image = get_field('top_section_background_image');
  
 ?>
@@ -22,7 +22,7 @@
         <br>
         <br>
         <br>
-        TEINE TEMPLIIT
+        <?php echo $top_section_text; ?>
     </div>
 
 </main>

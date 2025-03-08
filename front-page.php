@@ -24,6 +24,10 @@
             </div>
         </div>
     </div>
+
+    <?php
+        get_template_part('template-parts/accordion', null, array());
+    ?>
     
     <?php
         get_template_part('template-parts/text-slider', null, array());

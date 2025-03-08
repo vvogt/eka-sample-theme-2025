@@ -207,6 +207,11 @@ body p {
     display: none;
 }
 
+.py-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .mobile-menu-toggle .open {
     display: inline;
 }
@@ -231,4 +236,31 @@ body p {
     .top-bar .menu-main-nav-container {
         display: block;
     }
+}
+
+details summary {
+    position: relative;
+}
+
+details summary::after {
+    width: 24px;
+    height: 24px;
+    background-image: url('./assets/chevron_down.svg');
+    display: block;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+details>summary {
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
 }

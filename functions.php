@@ -37,5 +37,10 @@ function disable_content_editor() {
 }
 add_action('admin_init', 'disable_content_editor');
 
+function highlight_shortcode( $atts, $content = null ) {
+	return '<span class="highlight">' . $content . '</span>';
+}
+add_shortcode( 'highlight', 'highlight_shortcode' );
+
 ?>
 

@@ -4,6 +4,10 @@ body {
     font-family: "Montserrat", serif;
 }
 
+body p {
+    margin-top: 16px;
+}
+
 .top-bar {
     position: fixed;
     width: 100%;
@@ -152,4 +156,9 @@ body {
         position: absolute;
         top: 0;
     }
+}
+
+.highlight {
+    background-color: blueviolet;
+    color: white;
 }

@@ -3,6 +3,7 @@
 
  $top_section_title = get_field('top_section_title');
  $top_section_image = get_field('top_section_background_image');
+ $top_section_text  = get_field('intro_text');
  
 ?>
 
@@ -11,6 +12,7 @@
     <?php
         get_template_part('template-parts/hero', null, array(
             'title' => $top_section_title,
+            'text' => $top_section_text,
             'image' => $top_section_image,
         ));
     ?>

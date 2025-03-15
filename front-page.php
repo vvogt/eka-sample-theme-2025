@@ -33,6 +33,10 @@
         get_template_part('template-parts/text-slider', null, array());
     ?>  
 
+    <section class="content-container" id="scroll-target">
+        SIIA PEAKS SEE NUPP SCROLLIMA MIS ÜLEVAL ON
+    </section>
+
 <?php
         get_template_part('template-parts/hero', null, array(
             'title' => $top_section_title,

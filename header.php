@@ -30,6 +30,9 @@
                     <?php echo get_inline_svg('pinska_logo'); ?>
                 </a>
             </div>
+            <a href="#scroll-target">
+                Scrolliv nupp
+            </a>
             <?php
                 wp_nav_menu('main-nav');
             ?>

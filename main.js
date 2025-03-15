@@ -30,7 +30,7 @@ mobMenuContainer.addEventListener("close", (event) => {
 });
 
 window.addEventListener('resize', () => {
-    if (mobMenuContainer.classList.contains('mob-menu-open') && window.innerWidth >= 640) {
+    if (document.body.classList.contains('mob-menu-open') && window.innerWidth >= 640) {
         mobMenuContainer.close();
     }
 })

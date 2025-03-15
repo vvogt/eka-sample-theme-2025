@@ -44,9 +44,10 @@
         </div>
     </div>
 
-    <div class="mobile-menu-container">
+    <dialog class="mobile-menu-container">
+        <button class="close-mobile-menu">X</button>
         <?php
             wp_nav_menu('main-nav');
         ?>
-    </div>
+    </dialog>
 </header>

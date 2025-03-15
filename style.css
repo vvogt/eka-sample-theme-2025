@@ -15,6 +15,7 @@ body p {
     background-color: #2C3B37;
     color: #ffffff;
     padding: 24px 0;
+    z-index: 100;
 
     a {
         color: #ffffff;
@@ -187,7 +188,6 @@ body p {
 }
 
 .mobile-menu-container {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -197,6 +197,9 @@ body p {
     padding: 42px;
     padding-top: 200px;
     text-align: center;
+    z-index: 50;
+    max-width: none;
+    border: none;
 }
 
 .mobile-menu-container.active {
@@ -210,6 +213,10 @@ body p {
 .py-120 {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+body.mob-menu-open {
+    overflow: hidden;
 }
 
 .mobile-menu-toggle .open {

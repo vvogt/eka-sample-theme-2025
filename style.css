@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@view-transition {
+    navigation: auto;
+}
+
+.scroll-section {
+    position: relative;
+}
+
+.scroll-anchor {
+    position: absolute;
+    top: -120px;
+}
+
 body {
     font-family: "Montserrat", serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body p {

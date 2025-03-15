@@ -25,6 +25,11 @@
         </div>
     </div>
 
+    <section class="content-container scroll-section" style="background: blue;">
+        <div class="scroll-anchor" id="scroll-target"></div>
+        SIIA PEAKS SEE NUPP SCROLLIMA MIS ÜLEVAL ON
+    </section>
+
     <?php
         get_template_part('template-parts/accordion', null, array());
     ?>
@@ -33,9 +38,7 @@
         get_template_part('template-parts/text-slider', null, array());
     ?>  
 
-    <section class="content-container" id="scroll-target">
-        SIIA PEAKS SEE NUPP SCROLLIMA MIS ÜLEVAL ON
-    </section>
+
 
 <?php
         get_template_part('template-parts/hero', null, array(

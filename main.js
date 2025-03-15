@@ -29,8 +29,11 @@ mobMenuContainer.addEventListener("close", (event) => {
     document.body.classList.remove('mob-menu-open');
 });
 
-
-
+window.addEventListener('resize', () => {
+    if (mobMenuContainer.classList.contains('mob-menu-open') && window.innerWidth >= 640) {
+        mobMenuContainer.close();
+    }
+})
 
 /* mobMenuToggle.addEventListener('click', (button) => {
     mobMenuContainer.classList.toggle('active');

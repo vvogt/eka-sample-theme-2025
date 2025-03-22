@@ -23,6 +23,7 @@ mobMenuToggle.addEventListener("click", () => {
 
 mobMenuClose.addEventListener('click', () => {
     mobMenuContainer.close();
+
 });
 
 mobMenuContainer.addEventListener("close", (event) => {
@@ -48,3 +49,26 @@ window.addEventListener('resize', () => {
         document.body.classList.remove('mob-menu-open');
     }
 }) */
+
+function throttle(func, limit) {
+    let inThrottle;
+    return function (...args) {
+        if (!inThrottle) {
+            func.apply(this, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    }
+}
+
+function checkScroll() {
+    console.log('tick');
+    if (window.scrollY > 200) {
+        document.body.classList.add('scrolled');
+    } else {
+        document.body.classList.remove('scrolled');
+    }
+}
+
+window.addEventListener('scroll', throttle(checkScroll, 50));
+

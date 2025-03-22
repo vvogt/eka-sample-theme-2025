@@ -29,14 +29,14 @@ if (function_exists('acf_add_options_page')) {
 
 
 // Disable Gutenberg (Block) Editor
-add_filter('use_block_editor_for_post', '__return_false', 10);
+/* add_filter('use_block_editor_for_post', '__return_false', 10); */
 
 // Disable Classic Editor
 function disable_content_editor() {
     remove_post_type_support('post', 'editor');
     remove_post_type_support('page', 'editor');
 }
-add_action('admin_init', 'disable_content_editor');
+/* add_action('admin_init', 'disable_content_editor'); */
 
 function highlight_shortcode( $atts, $content = null ) {
 	return '<span class="highlight">' . $content . '</span>';
@@ -44,6 +44,7 @@ function highlight_shortcode( $atts, $content = null ) {
 add_shortcode( 'highlight', 'highlight_shortcode' );
 
 add_theme_support( 'title-tag' );
+
 
 
 

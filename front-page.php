@@ -24,6 +24,10 @@
             </div>
         </div>
     </div>
+ 
+    <div class="content-container">
+        <?php echo do_shortcode('[wpforms id="55" title="false"]'); ?>
+    </div>
 
     <section class="content-container scroll-section" style="background: blue;">
         <div class="scroll-anchor" id="scroll-target"></div>

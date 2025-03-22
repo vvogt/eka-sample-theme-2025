@@ -12,6 +12,7 @@ add_action(
         wp_enqueue_style('reset-style', get_theme_file_uri('reset.css'), array(), filemtime(get_theme_file_path('reset.css')), 'screen');
         wp_enqueue_script('slider-script', get_theme_file_uri('slider.js'), array(), filemtime(get_theme_file_path('slider.js')), true);
         wp_enqueue_script('main', get_theme_file_uri('main.js'), array(), filemtime(get_theme_file_path('main.js')), true);
+        wp_enqueue_script('fslightbox', get_theme_file_uri('/fslightbox/fslightbox.js'), array(), filemtime(get_theme_file_path('/fslightbox/fslightbox.js')), true);
     }
 );
 

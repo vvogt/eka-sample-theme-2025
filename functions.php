@@ -135,6 +135,7 @@ if (function_exists('acf_add_options_page')) {
             'redirect'   => 'Navigatsioon',
         )
     );
+    
     $languages = pll_languages_list();
     foreach ($languages as $lang) {
         acf_add_options_sub_page(
@@ -144,6 +145,26 @@ if (function_exists('acf_add_options_page')) {
                 'menu_slug'  => "navigation-${lang}",
                 'post_id'    => $lang,
                 'parent'     => $parent['menu_slug'],
+            )
+        );
+
+        acf_add_options_sub_page(
+            array(
+                'page_title' => 'Viruful Stories Archive Options (' . strtoupper($lang) . ')',
+                'menu_title' => __('Viruful Stories Archive (' . strtoupper($lang) . ')', ''),
+                'menu_slug'  => "viruful-stories-archive-settings-${lang}",
+                'post_id'    => 'viruful-stories-archive-' . $lang,
+                'parent'     => 'edit.php?post_type=viruful-stories',
+            )
+        );
+        
+        acf_add_options_sub_page(
+            array(
+                'page_title' => 'Jobs Archive Options (' . strtoupper($lang) . ')',
+                'menu_title' => __('Jobs Archive (' . strtoupper($lang) . ')', ''),
+                'menu_slug'  => "jobs-archive-settings-${lang}",
+                'post_id'    => 'jobs-archive-' . $lang,
+                'parent'     => 'edit.php?post_type=jobs',
             )
         );
     }

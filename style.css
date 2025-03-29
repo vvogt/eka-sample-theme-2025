@@ -322,3 +322,8 @@ details>summary::-webkit-details-marker {
 body {
     min-height: 1000vh;
 }
+
+.lang-switcher .lang-item:not(:first-child)::before {
+    @apply mr-8 text-[#7FA1CB];
+    content: "|";
+}

@@ -17,6 +17,47 @@
         ));
     ?>
 
+    
+    <?php 
+    /* DISPLAY ALL PEOPLE */
+    $args = array(
+        'post_type'=> 'people',
+    );              
+
+    $the_query = new WP_Query( $args );
+    if($the_query->have_posts() ) : 
+        while ( $the_query->have_posts() ) : 
+        $the_query->the_post(); 
+
+        /* $person_email = get_field('email'); */
+        
+        ?>
+
+            <div class="person-container">
+                <p>
+                    <?php the_title(); ?>
+                </p>
+
+                <!-- <a href="mailto:<?php echo $person_email; ?>">
+                    <?php echo $person_email; ?>
+                </a> -->
+            </div>
+
+        <?php
+
+        endwhile; 
+        wp_reset_postdata(); 
+    else: ?>
+
+        <p>No people</p>
+
+    <?php
+    endif;
+
+    /* PEOPLE ENDED */
+    ?>
+
+
     <section class="lightbox-section content-container">
         <a href="<?php echo get_template_directory_uri() . '/assets/image-1.jpg' ?>" data-fslightbox class="lightbox-thumbnail">
             <img src="<?php echo get_template_directory_uri() . '/assets/image-1.jpg' ?>" alt="">

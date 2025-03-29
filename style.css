@@ -182,6 +182,23 @@ body p {
     }
 }
 
+.lightbox-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.lightbox-thumbnail {
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.lightbox-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .image-container-container {
     width: 50%;
     position: relative;
@@ -298,7 +315,7 @@ details>summary::-webkit-details-marker {
     }
 }
 
-.scrolled .top-bar {
+.scrolled .top-bar:not(.scrolled:has(.sub-menu-open) .top-bar) {
     background-color: aquamarine;
 }
 

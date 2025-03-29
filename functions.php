@@ -55,5 +55,15 @@ add_theme_support( 'title-tag' );
 
  add_filter( 'wpforms_mailcheck_enabled', '__return_false' );
 
+ // Disable Gutenberg Block Editor
+add_filter('use_block_editor_for_post', '__return_false', 10);
+
+// Disable Classic Editor
+function disable_classic_editor() {
+    remove_post_type_support('post', 'editor');
+    remove_post_type_support('page', 'editor');
+}
+add_action('init', 'disable_classic_editor');
+
 ?>
 

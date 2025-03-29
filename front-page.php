@@ -17,6 +17,18 @@
         ));
     ?>
 
+    <section class="lightbox-section content-container">
+        <a href="<?php echo get_template_directory_uri() . '/assets/image-1.jpg' ?>" data-fslightbox class="lightbox-thumbnail">
+            <img src="<?php echo get_template_directory_uri() . '/assets/image-1.jpg' ?>" alt="">
+        </a>
+        <a href="<?php echo get_template_directory_uri() . '/assets/image-2.jpg' ?>" data-fslightbox class="lightbox-thumbnail">
+            <img src="<?php echo get_template_directory_uri() . '/assets/image-2.jpg' ?>" alt="">
+        </a>
+        <a href="<?php echo get_template_directory_uri() . '/assets/image-3.jpg' ?>" data-fslightbox class="lightbox-thumbnail">
+            <img src="<?php echo get_template_directory_uri() . '/assets/image-3.jpg' ?>" alt="">
+        </a>
+    </section>
+
     <div class="sample-image-container">
         <div class="content-container image-container-container">
             <div class="image-container">

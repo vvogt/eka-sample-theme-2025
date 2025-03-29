@@ -17,7 +17,7 @@
         <br>
         <br>
         <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero debitis minus deserunt unde magnam ipsum modi voluptas quas sequi odio? Reprehenderit dolorum nulla esse ut deleniti nemo aut, alias sint!
+        <?php the_content(); ?>
     </div>
 
 </main>

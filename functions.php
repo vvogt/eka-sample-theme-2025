@@ -125,5 +125,29 @@ function create_people_post_type() {
 // Hook into the 'init' action
 add_action( 'init', 'create_people_post_type', 0 );
 
+
+/* Add ACF options pages for all languages */
+if (function_exists('acf_add_options_page')) {
+    $parent = acf_add_options_page(
+        array(
+            'page_title' => 'Navigatsioon',
+            'menu_title' => 'Navigatsioon',
+            'redirect'   => 'Navigatsioon',
+        )
+    );
+    $languages = pll_languages_list();
+    foreach ($languages as $lang) {
+        acf_add_options_sub_page(
+            array(
+                'page_title' => 'Navigatsioon (' . strtoupper($lang) . ')',
+                'menu_title' => __('Navigatsioon (' . strtoupper($lang) . ')', ''),
+                'menu_slug'  => "navigation-${lang}",
+                'post_id'    => $lang,
+                'parent'     => $parent['menu_slug'],
+            )
+        );
+    }
+}
+
 ?>
 
